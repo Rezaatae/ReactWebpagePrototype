@@ -16,11 +16,11 @@ export const SidebarContainer = styled.aside`
     left: 0;
     transition: 0.3s ease-in-out;
     opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
-    top: ${({ isOpen }) => (isOpen ? '0' : '-100')};
+    top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
 `;
 
 export const CloseIcon = styled(FaTimes)`
-color: #fff;
+    color: #fff;
 `;
 
 export const Icon = styled.div`
@@ -37,11 +37,12 @@ export const SidebarWrapper = styled.div`
     color: #fff;
 `;
 
-export const SidebarMenue = styled.ul`
+export const SidebarMenu = styled.ul`
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 80px);
+    grid-template-rows: repeat(6, 100px);
     text-align: center;
+    margin: 8rem 10rem;
 
     @media screen and (max-width: 480px){
         grid-template-rows: repeat(6, 60px);
@@ -56,6 +57,7 @@ export const SidebarLink = styled(LinkS)`
     text-decoration: none;
     list-style: none;
     transition: 0.2s ease-in-out;
+    text-decoration: none;
     color: #fff;
     cursor: pointer;
 

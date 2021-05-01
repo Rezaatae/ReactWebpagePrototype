@@ -4,13 +4,13 @@ import {Nav, NavbarContainer, NavLogo, MobileIcon,
      NavMenue, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements';
 
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
     return (
         <>
             <Nav>
                 <NavbarContainer>
                     <NavLogo to='/'>jpLOGO</NavLogo>
-                    <MobileIcon>
+                    <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>
                     <NavMenue>
