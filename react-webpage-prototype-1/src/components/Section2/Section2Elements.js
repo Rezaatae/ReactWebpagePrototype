@@ -3,26 +3,45 @@ import styled from 'styled-components'
 export const Section2Container = styled.div`
     color: #fff;
     background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '010606')};
-    margin-top: 80px;
+    margin-top: 160px;
 
     @media screen and (max-width: 768px) {
         padding: 100px 0:
     }
 `
 
+export const Section2Bg = styled.div`
+    position: absolute;
+    top: 1767px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+`
+
+export const ImgBg = styled.img`
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background: #232a34;
+`
+
 export const Section2Wrapper = styled.div`
-    display: flex;
+    display: block;
     z-index: 1;
     height: 880px;
     width: 100%;
     max-width: 1100px;
-    margin-left: auto;
-    padding: 0 24px;
+    margin-left: 0;
     justify-content: center;
 `
 
 export const Section2Row = styled.div`
-    display: grid;
+    display: inline-block;
+    z-index: 3;
     grid-auto-columns: minmax(auto, 1fr);
     align-items: centre;
     grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
@@ -34,66 +53,42 @@ export const Section2Row = styled.div`
 
 export const Section2Card1 = styled.div`
     background: #fff;
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    // align-items: center;
+    left: 0;
     border-radius: 1px;
     max-height: 340px;
-    padding: 10rem 5rem;
+    padding: 20rem 20rem;
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out;
+    z-index: 3;
+    opacity: 0.9;
 `
 
 export const TextWrapper = styled.div`
     max-width: 540px;
-    padding-top: 0;
+    padding-top: 50px;
     padding-bottom: 60px;
-`
-
-export const TopLine = styled.p`
-    color: #01bf71;
-    font-size: 16px;
-    line-height: 16px;
-    font-weight: 700;
-    letter-spacing: 1.4px;
-    text-transform: uppercase;
-    margin-bottom: 16px;
-`
-
-export const Heading = styled.h1`
-    //color: #000;
-    margin-bottom: 24px;
-    font-size: 48px;
-    line-height: 1.1;
-    font-weight: 600;
-    color: ${({ lightText }) => (lightText ? '#f7f8fa' : '010606')};
-
-    @media screen and (max-width: 480px) {
-        font-size: 32px;
-    }
-`
-
-export const Subtitle = styled.p`
-    max-width: 440px;
-    margin-bottom: 35px;
-    font-size: 18px;
-    line-height: 24px;
-    color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
+    z-index: 4;
 `
 
 export const BtnWrap = styled.div`
+    margin-top: 150px;
     display: flex;
     justify-content: flex-start;
 `
 
 
 export const Section2H2 = styled.h2`
-    font-size: 1rem;
-    margin-bottom: 10px;
+    color: #000;
+    font-size: 5rem;
+    margin-top: -350px;
 `
 
 export const Section2P = styled.p`
+    color: #000;
     font-size: 1rem;
-    text-align: center;
+    margin-top: 50px
 `

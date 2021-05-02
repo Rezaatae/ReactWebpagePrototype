@@ -76,7 +76,6 @@ export const HeroP = styled.p`
 export const HeroBtnWrapper = styled.div`
     margin-top: 380px;
     display: flex;
-    flex-direction;
     flex-direction: column;
     align-items: center;
 `

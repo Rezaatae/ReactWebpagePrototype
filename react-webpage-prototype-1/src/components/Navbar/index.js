@@ -1,7 +1,8 @@
 import React from 'react';
 import {animateScroll as scroll} from 'react-scroll'
 import {FaBars} from 'react-icons/fa';
-import {Nav, NavbarContainer, NavLogo, MobileIcon,
+import logo from '../../images/logo-small-white.svg'
+import {Nav, NavbarContainer, NavLogo, LogoImg, MobileIcon,
      NavMenue, NavItem, NavLinks, NavBtn, NavBtnLink} from './NavbarElements';
 
 
@@ -15,7 +16,7 @@ const Navbar = ({toggle}) => {
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to='/' onClick={toggleHome}><img src={require('../../images/logo-small-white.svg')} alt="logo" /></NavLogo>
+                    <NavLogo to='/' onClick={toggleHome}> <LogoImg src={logo} alt="Jones and Palmer" /><small>Jones and Palmer</small></NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>

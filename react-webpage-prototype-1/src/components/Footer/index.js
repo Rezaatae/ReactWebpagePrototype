@@ -1,9 +1,10 @@
 import React from 'react'
 import {animateScroll as scroll} from 'react-scroll'
 import {FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaLinkedin} from 'react-icons/fa'
+import logo from '../../images/logo-small-black.svg'
 import {FooterContainer, FooterWrapper, FooterLinksContainer, FooterLinksWrapper,
 FooterLinkItems, FooterLinkTitle, FooterLink, 
-SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink} from './FooterElements'
+SocialMedia, SocialMediaWrap, SocialLogo, CopyRight, LogoImg, WebsiteRights, SocialIcons, SocialIconLink} from './FooterElements'
 
 const Footer = () => {
 
@@ -47,10 +48,11 @@ const Footer = () => {
                 <SocialMedia>
                     <SocialMediaWrap>
                         <SocialLogo to='/' onClick={toggleHome}>
-                            dolla
+                        <LogoImg src={logo} alt="Jones and Palmer" /> <CopyRight> © {new Date().getFullYear()} Jones and Palmer</CopyRight>
                         </SocialLogo>
                         <WebsiteRights>
-                            dolla © {new Date().getFullYear()} Jones and Palmer
+                        <LogoImg src={logo} alt="Jones and Palmer" />
+                         Designed and developed by: jonesandpalmer.co.uk
                         </WebsiteRights>
                         <SocialIcons>
                             <SocialIconLink href="/" target="_blank"
