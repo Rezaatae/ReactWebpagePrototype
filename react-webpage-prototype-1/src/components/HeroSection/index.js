@@ -26,7 +26,11 @@ const HeroSection = () => {
                 </HeroP>
                 <HeroBtnWrapper>
                     <Button to='section1' onMouseEnter={onHover} 
-                    onMouseLeave={onHover}>
+                    onMouseLeave={onHover} smooth={true} 
+                    duration={500} 
+                    spy={true} 
+                    exact='true' 
+                    offset={-80}>
                         Read more {hover ? <ArrowForward /> : <ArrowRight/>}
                     </Button>
                 </HeroBtnWrapper>
