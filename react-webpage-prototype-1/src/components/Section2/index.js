@@ -3,8 +3,7 @@ import {Button} from '../ButtonElement'
 import { Section2Container, Section2Bg, ImgBg, Section2Wrapper, Section2Row,
     TextWrapper, Section2H2, Section2P, Section2Card1, BtnWrap } from './Section2Elements'
 import img2 from '../../images/Image-3.jpg'
-const Section2 = ({buttonLabel,
-primary, dark, dark2}) => {
+const Section2 = () => {
     return (
         <>
             <Section2Container id='section2'>
