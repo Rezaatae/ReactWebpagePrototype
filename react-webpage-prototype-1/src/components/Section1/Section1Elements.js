@@ -59,7 +59,6 @@ export const Section1Wrapper = styled.div`
 export const Section1Card1 = styled.div`
     background: #000;
     display: flex;
-    margin-top: 180px;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -74,7 +73,6 @@ export const Section1Card1 = styled.div`
 export const Section1Card2 = styled.div`
     background: #000;
     display: flex;
-    margin-top: 180px;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -89,7 +87,6 @@ export const Section1Card2 = styled.div`
 export const Section1Card3 = styled.div`
     background: #000;
     display: flex;
-    margin-top: 180px;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -99,19 +96,6 @@ export const Section1Card3 = styled.div`
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out;
     opacity: 0.7;
-`
-
-export const Section1Card4 = styled.div`
-    background: #018f71;
-    font-size: 20px;
-    margin-left: 810px;
-    margin-top: 15rem;
-    display: block;
-    border-radius: 1px;
-    max-height: 340px;
-    padding: 0.5rem 2rem;
-    transition: all 0.2s ease-in-out;
-    opacity: 0.9;
 `
 
 export const Section1H2 = styled.h2`
