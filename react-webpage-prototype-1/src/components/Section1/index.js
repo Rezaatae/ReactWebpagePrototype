@@ -1,8 +1,8 @@
 import React from 'react'
 import { Section1Container, Section1Bg, ImgBg, Section1Wrapper, Section1Card1, Section1Card2, Section1Card3,
-Section1H2, Section1P} from './Section1Elements'
+Section1Card4, Section1H2, Section1P} from './Section1Elements'
 import img1 from '../../images/Image-2.jpg'
-const Section1 = ({id}) => {
+const Section1 = () => {
     return (
         
         <Section1Container id='section1'>
@@ -52,6 +52,10 @@ const Section1 = ({id}) => {
                     </Section1P>
                 </Section1Card3>
             </Section1Wrapper>
+            <Section1Card4>
+                    <Section1P> 1/4
+                    </Section1P>
+                </Section1Card4>
         </Section1Container>
     )
 }

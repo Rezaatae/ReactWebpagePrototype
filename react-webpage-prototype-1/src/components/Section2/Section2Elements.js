@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from 'react-icons/md'
 
 export const Section2Container = styled.div`
     color: #fff;
@@ -91,4 +92,39 @@ export const Section2P = styled.p`
     color: #000;
     font-size: 1rem;
     margin-top: 50px
+`
+
+export const LeftCard = styled.div`
+    background: #018f71;
+    font-size: 20px;
+    margin: 0.5px 300px;
+    display: block;
+    border-radius: 1px;
+    max-height: 340px;
+    padding: 0.9rem 2rem;
+    transition: all 0.2s ease-in-out;
+    opacity: 0.9;
+    z-index: 4;
+`
+
+export const RightCard = styled.div`
+    background: #018f71;
+    font-size: 20px;
+    margin: 0.5px -290px;
+    display: block;
+    border-radius: 1px;
+    max-height: 340px;
+    padding: 0.9rem 2rem;
+    transition: all 0.2s ease-in-out;
+    opacity: 0.9;
+`
+
+export const ArrowRight = styled(MdKeyboardArrowRight)`
+    margin-left: 8px;
+    font-size: 28px;
+`
+
+export const ArrowLeft = styled(MdKeyboardArrowLeft)`
+    margin-left: 8px;
+    font-size: 28px;
 `

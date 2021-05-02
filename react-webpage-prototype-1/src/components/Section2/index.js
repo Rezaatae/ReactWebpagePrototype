@@ -1,7 +1,7 @@
 import React from 'react'
 import {Button} from '../ButtonElement'
 import { Section2Container, Section2Bg, ImgBg, Section2Wrapper, Section2Row,
-    TextWrapper, Section2H2, Section2P, Section2Card1, BtnWrap } from './Section2Elements'
+    TextWrapper, Section2H2, Section2P, Section2Card1, LeftCard, RightCard, BtnWrap, ArrowRight, ArrowLeft } from './Section2Elements'
 import img2 from '../../images/Image-3.jpg'
 const Section2 = () => {
     return (
@@ -26,6 +26,8 @@ const Section2 = () => {
                                 </Section2P>
                             <BtnWrap>
                                 <Button>Our Asset Portfolio</Button>
+                                <LeftCard> <ArrowLeft/></LeftCard>
+                        <RightCard> <ArrowRight/></RightCard>
                             </BtnWrap>
                         </TextWrapper>
                         </Section2Card1>
